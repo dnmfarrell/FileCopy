@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     else if (stat(argv[1],&watchStat) < 0
             || stat(argv[2],&targetStat) < 0)
     {
-        printf("Error reading watch directory %s", argv[1]);
+        printf("Error reading the watch / target directory %s / %s\n", argv[1], argv[2]);
         return 1;
     }
 
